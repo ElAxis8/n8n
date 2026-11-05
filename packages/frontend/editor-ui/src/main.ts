@@ -1,4 +1,5 @@
 import { createApp } from 'vue';
+import { initAll } from '@amplitude/unified';
 
 import '@vue-flow/core/dist/style.css';
 import '@vue-flow/core/dist/theme-default.css';
@@ -37,6 +38,11 @@ import { registerUpgradeRedirectGuard } from '@/app/upgradeRedirectGuard.manifes
 import { installRenderTracker } from '@/app/dev/render-tracker';
 
 import type { VueScanOptions } from 'z-vue-scan';
+
+initAll('a0d3dae0b5c8e33f80d20cfff73470f8', {
+	analytics: { autocapture: true },
+	sessionReplay: { sampleRate: 1 },
+});
 
 registerVitePreloadErrorHandler();
 
