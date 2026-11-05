@@ -194,6 +194,7 @@
   },
   "license": "LicenseRef-n8n-sustainable-use",
   "dependencies": {
+    "@amplitude/unified": "catalog:",
     "cronstrue": "catalog:"
   }
 }

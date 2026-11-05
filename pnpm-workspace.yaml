@@ -299,6 +299,7 @@ catalog:
   rate-limit-redis: 4.3.1
   ioredis-mock: ^8.8.1
   '@types/ioredis-mock': 8.2.2
+  '@amplitude/unified': ^1.2.1
 
 catalogMode: strict
 
